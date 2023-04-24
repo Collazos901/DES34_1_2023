@@ -158,13 +158,14 @@ header p{font-size:5em;}
 header p{font-size:1.5em;}
 header a.mail{font-size:1.5em;}
 div.hero3-txt{font-size:4vw;}
-div.hero4-txt{font-size:0.5vw;}
+div.hero4-txt{font-size:0.8vw;}
 div.rtf h3{font-size:3em; line-height:1.5em; margin-bottom:0.5em; margin-top: 1em;}
 div.rtf p{font-size:2em; line-height:1.5em; margin-bottom:0.5em;}
-div.hero4-txt a.dat{font-size: 1vw;}
+div.hero4-txt a.dat{font-size: 0.6vw;}
 div.cards2 div.card{font-size:2em;}
 div.rtf p{font-size:0.8em;}
 div.rtf h3{font-size:1em; text-transform: uppercase;}
+
 }
 
 /**/
