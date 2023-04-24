@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end of css reset*/
+
+/*global styles begin*/
+html{scroll-behavior: smooth;}
+body{font-family:'Poppins','Arial','Helvetica','Roboto',sans-serif;
+font-size:clamp(10px,1vw,14px);
+}
+div{box-sizing:border-box;}
+/*typography*/
+div.rtf{}
+div.rtf p{font-size:1em; line-height:1.5em; margin-bottom:0.5em;}
+div.rtf h1{font-size:3.2em; line-height:1.5em; margin-bottom:0.5em; margin-top: 1em;}
+div.rtf h2{font-size:2.4em; line-height:1.5em; margin-bottom:0.5em; margin-top: 1em;}
+div.rtf h3{font-size:1.8em; line-height:1.5em; margin-bottom:0.5em; margin-top: 1em;}
+div.rtf h4{font-size:1.2em; line-height:1.5em; margin-bottom:0.5em; margin-top: 1em;}
+/*global styles begin*/
+/*header styles*/
+header{position:fixed; top:0; left:0; right:0; display:grid;
+	grid-template-columns:1fr 1fr; grid-gap:20px; background:#132132; color:#dae2ec;
+	z-index:10000;
+}
+header img{width:30px; margin:1em; align-self:center; justify-self:end;}
+header p{font-size:1.5em; align-self:center; justify-self:start; padding: 10px; display: block;}
+header a.mail{text-decoration:none; align-self:center; justify-self:end; color:#fff;
+	margin:0 20px; font-size: 1.5em;}
+
+
+div.xframe{padding-top:6em; min-height:100vh; background-size:30px;}
+
+div.hero{min-height:100vh; position: relative; }
+img.hero-img{width:100%; height:100vh; object-fit:cover;}
+div.hero-txt{position: absolute;
+	top:50%; left:50%; transform:translate(-50%,-50%);
+	background-color:rgba(255,255,255,0.5);
+  padding:2em; font-size:2em;
+}
+div.hero-txt div.rtf h2{margin-top:0; margin-bottom:0;}
+
+div.text_image{
+		--padding:1vw;
+}
+
+div.text_image{max-width:1200px; margin:0 auto; display:grid; grid-template-columns: 1fr 1fr; grid-gap:calc(var(--padding) * 4); padding:var(--padding);
+}
+
+div.text_image img{width:100%; object-fit:contain; margin-bottom:var(--padding);}
+div.text_image div.txt{align-self:start; max-width:65ch;}
+
+
+
+
+div.cards{max-width:1200px; margin:0 auto;
+		display:grid; grid-template-columns: repeat(auto-fill,minmax(min(500px,100%),1fr)); grid-gap:2vw; padding:3vw;
+}
+
+
+div.cards div.card{align-self:end;}
+
+div.cards div.card img{width:100%; }
+div.cards div.card div.txt{justify-self:center; align-self:start; max-width:65ch;}
+div.cards div.card{background:(0,200,255,0.5);}
+div.cards div.card a{}
+
+div.hero2{background:#132132;}
+div.hero2-txt{font-size:6vw; text-transform:capitalize; font-weight:bold;
+	background-image:url(hero.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	color: #de466c;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+	}
+div.hero2-txt.rtf h2{margin-top:0; margin-bottom:0;}
+
+div.cards2{max-width:1200px; margin:0 auto;
+		display:grid; grid-template-columns: repeat(3,1fr); grid-gap:7vw; padding:3vw;
+}
+div.cards2 div.card{position: relative; transition:all 0.5s;}
+div.cards2 div.card img{width:100%; }
+div.cards2 div.card div.txt{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); text-align: center;}
+div.cards2 div.card{background:(0,200,255,0.5);}
+div.cards2 div.card a{display:block; position: absolute; top:0; left:0; right:0; bottom:0;}
+div.cards2 div.card:hover{transform:scale(1.1);}
+div.cards2 a{color:orange; text-decoration: none; white-space: nowrap;}
+div.cards2 div.card{font-size:2em;}
+
+
+div.dark{background:#132132;color:#dae2ec;}
+
+div.light{background:linear-gradient(0deg, rgba(218,226,236,0) 0%, rgba(218,226,236,1) 100%);color:orange;}
+
+
+
+div.hero3-txt{font-size:1.5vw; text-transform:capitalize; font-weight:bold;}
+div.hero3-txt.rtf h2{margin-top:0; text-align:center;padding-top: 3vw;}
+
+div.hero4-txt{font-size:0.5vw; text-transform:capitalize; font-weight:lighter;}
+div.hero4-txt.rtf h2{margin-bottom:0; text-align:center;}
+div.hero4-txt{grid-template-columns:1fr 1fr; grid-gap:20px; z-index:10000; display: grid; padding: 1em;}
+div.hero4-txt a.dat{justify-self: end;}
+
+
+@media screen and (orientation: portrait) {
+	div.text_image{grid-template-columns: 1fr;}
+	div.text_image div.txt{justify-self:start; grid-row-start:1;}
+
+header p{font-size:5em;}
+header p{font-size:1.5em;}
+header a.mail{font-size:1.5em;}
+div.hero3-txt{font-size:4vw;}
+div.hero4-txt{font-size:0.5vw;}
+div.rtf h3{font-size:3em; line-height:1.5em; margin-bottom:0.5em; margin-top: 1em;}
+div.rtf p{font-size:2em; line-height:1.5em; margin-bottom:0.5em;}
+div.hero4-txt a.dat{font-size: 1vw;}
+div.cards2 div.card{font-size:2em;}
+div.rtf p{font-size:0.8em;}
+div.rtf h3{font-size:1em; text-transform: uppercase;}
+}
+
+/**/
